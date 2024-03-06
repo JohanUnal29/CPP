@@ -37,7 +37,7 @@ void nth_twin_primes(int n)
         }
     }
     if (contador == n){
-        std::cout << "(" << i << ", " << i+2 << ") "; 
+        std::cout << i << "\t" << i+2 << "\n";
     }
         
 }
