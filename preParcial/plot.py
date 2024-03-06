@@ -32,7 +32,7 @@ plt.plot(x_values, y_values, label=f'y = {m:.2f}x')
 
 
 plt.scatter(x_initial, y_initial, color='blue', label='Inicio (0, 0)')
-plt.scatter(x_final, y_final, color='red', label='Final (3, 5)')
+plt.scatter(x_final, y_final, color='red', label=f'Final ({x_final}, {y_final})')
 
 
 plt.xlabel('x')
