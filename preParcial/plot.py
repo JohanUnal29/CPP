@@ -1,13 +1,14 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import codecs
 
 
 x_initial = 0
 y_initial = 0
 
-with open("datos.txt", "r", encoding="utf-16") as file:
-    line = file.readline().strip()  
-    x_final, y_final = map(int, line.split())  
+with codecs.open("datos.txt", "r", encoding="utf-16-le") as file:
+    line = file.readline().strip('\ufeff')  # Eliminamos el BOM al principio
+    x_final, y_final = map(int, line.split()) 
 
 
 print("x_final:", x_final)
