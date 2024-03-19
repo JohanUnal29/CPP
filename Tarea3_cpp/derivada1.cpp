@@ -14,7 +14,7 @@ int main()
 
     fstream archivo("datos_error.txt", ios::out);
     double x = 4.321;
-    double derivada_exacta = 4 * cos(x);
+    double derivada_exacta = 4*sin(x)+4*x*cos(x);
     int contador = 1;
 
     for (double h = 1e-1; h >= 1e-10; h /= 10)
